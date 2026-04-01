@@ -9,7 +9,7 @@ const unusedValue = "Sonar should detect me but I am not used";
 function totallyUnusedFunction() {
     console.log("I am never called!");
 }
-
+deee
 // ❌ Duplicate block of code (duplication issue)
 console.log("This duplicate line will cause a Sonar issue");
 console.log("This duplicate line will cause a Sonar issue");
