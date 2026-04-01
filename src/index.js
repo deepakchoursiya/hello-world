@@ -5,3 +5,4 @@ function greet() {
 console.log(greet());
 
 module.exports = greet;
+// sonar test
