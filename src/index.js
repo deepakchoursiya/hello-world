@@ -1,24 +1,28 @@
 // ================================
-// BAD CODE FOR SONARCLOUD TESTING
+// BAD CODE TO FORCE SONARCLOUD FAIL
 // ================================
 
-// ❌ Dead variable (never used)
-const unusedValue = 123;
+// ❌ Dead unused variable (maintainability issue)
+const unusedValue = "Sonar should detect me but I am not used";
 
-// ❌ Unused function
-function neverUsedFunction() {
-    console.log("This function is never called");
-    return "unused";
+// ❌ Unused function (maintainability issue)
+function totallyUnusedFunction() {
+    console.log("I am never called!");
 }
 
-// ❌ Duplicate code (copy-pasted intentionally)
-console.log("Duplicate code line");
-console.log("Duplicate code line");
+// ❌ Duplicate block of code (duplication issue)
+console.log("This duplicate line will cause a Sonar issue");
+console.log("This duplicate line will cause a Sonar issue");
 
-// ❌ Console.log in production (SonarCloud flags it)
-console.log("Debug: Should not use console.log in production");
+// ❌ Bad practice: console.log (Sonar flags it)
+console.log("Debug logs should not be used in production");
 
-// Normal exported function (optional)
+// ❌ More issues: unused parameters
+function add(a, b, c) { // c is never used → issue
+    return a + b;
+}
+
+// Main function
 function greet() {
     return "Hello World!";
 }
