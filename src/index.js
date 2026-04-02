@@ -1,1 +1,1 @@
-gcfg 
+consol.loghii 
